@@ -18,10 +18,10 @@
 	<div class="row">
 		<div class="col-lg-4 col-xs-12">
 			<!-- small box -->
-			<a href="#">
+			<a href="{{ URL::to('Productos') }}">
 				<div class="small-box bg-aqua">
 					<div class="inner">
-						<h3>Productos: 15</h3>
+						<h3>Productos: {{ Producto::all()->count() }}</h3>
 						<p>Total de productos</p>
 					</div>
 					<div class="icon">

@@ -17,3 +17,5 @@ Route::get('/', function()
 });
 
 Route::get('Productos/Add', 'ProductosController@add');
+Route::post('Productos/Add', 'ProductosController@save');
+Route::get('Productos', 'ProductosController@index');
